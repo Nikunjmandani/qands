@@ -1,0 +1,24 @@
+<div class="jumbotron text-center">
+        <h2>Put Your Questions  and Answers</h2>
+       
+      </div>
+      
+      <div class="container">
+            <form method="POST" name="form" #form="ngForm"  novalidate (ngSubmit)="onSubmitTemplateBased()">
+                <div class="form-group">
+                  <label class="control-label" for="email">Question:</label><br>
+                  <input type="text" [(ngModel)]="model.question" name="question" class="form-control" #question="ngModel">
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="answer">Answers:</label><br>
+                  <textarea  class="form-control" [(ngModel)]="model.answer" name="answer" rows="5" #answer="ngModel"></textarea>
+                </div>
+               
+                <button type="submit" type="submit" [disabled]="!form.valid" data-toggle="model" data-target="#myModal" class="btn btn-default btn-sucess">Submit</button>
+              </form>
+         
+        
+      </div>
+      <!-- <div class="checkbox">
+                  <label><input type="checkbox">sure answer is write</label>
+                </div>  -->

@@ -1,0 +1,81 @@
+body {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+  }
+  
+  .parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header, .content {
+    width: 60%;
+    margin: 3px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .header > div.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 15px;
+    margin-top: 0;
+  }
+  
+  .header > div.info > div {
+    font-family: 'Lato';
+  }
+  
+  .info .name {
+    font-size: 64px;
+  }
+  
+  .info .phone, .mail {
+    font-size: 26px;
+  }
+  
+  .pic > img {
+    max-height: 175px;
+  }
+  
+  .title {
+    font-size: 22px;
+    font-family: 'Lato';
+    border-bottom: 1px solid #2c3e50;
+    color: #2c3e50;
+    text-transform: uppercase;
+  }
+  
+  .head-title {
+    width: 60%;
+    font-family: 'Open Sans';
+    font-size: 32px;
+    color: #2c3e50;
+  }
+  
+  span.c {
+    color: #95a5a6;
+  }
+  
+  dl {
+    font-size: 20px;
+  }
+  
+  dt {
+    float: left;
+    clear: left;
+    width: 250px;
+    font-weight: bold;
+    font-family: 'Lato';
+  }
+  
+  dd {
+    margin: 0 0 0 250px;
+    padding: 0 0 0.5em 0;
+    font-family: 'Open Sans'
+  }
