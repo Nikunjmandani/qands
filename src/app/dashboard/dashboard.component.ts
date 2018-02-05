@@ -22,7 +22,7 @@ export class DashboardComponent implements OnInit {
     this.qandsservice.insertQands(qands).subscribe(
       value => {
         console.log("NN:"+JSON.stringify(value));
-        alert("Data saved sucessfully")
+         alert("Data saved sucessfully");
       }
     )
 }
