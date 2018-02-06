@@ -14,8 +14,8 @@ export const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'dashboard2', component: Dashboard2Component },
   { path: 'dashboard3', component: Dashboard3Component },
- // { path: 'con', component: ConComponent },
- // { path: 'abcd', component: AbcdComponent },
+  // { path: 'con', component: ConComponent },
+  // { path: 'abcd', component: AbcdComponent },
   //{ path: 'home', component: HomeComponent },
 ];
 

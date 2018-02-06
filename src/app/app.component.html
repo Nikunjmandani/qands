@@ -5,13 +5,21 @@
 	<ul class="menu">
 		<!-- <li><a [routerLink]="['home']">Home</a></li>
 		<li><a [routerLink]="['abcd']">abcd</a></li>  -->
-		<li><a [routerLink]="['login']">Login</a></li>
-		<li><a [routerLink]="['dashboard']">Dashboard</a></li>
-    <li><a [routerLink]="['dashboard2']">Dashboard2</a></li>
-    <li><a [routerLink]="['dashboard3']">Dashboard3</a></li>
+		<li>
+			<a [routerLink]="['login']">Login</a>
+		</li>
+		<li>
+			<a [routerLink]="['dashboard']">Dashboard</a>
+		</li>
+		<li>
+			<a [routerLink]="['dashboard2']">Dashboard2</a>
+		</li>
+		<li>
+			<a [routerLink]="['dashboard3']">Dashboard3</a>
+		</li>
 	</ul>
 </header>
 
 <div class="container" id="content">
-    <router-outlet></router-outlet> 
+	<router-outlet></router-outlet>
 </div>

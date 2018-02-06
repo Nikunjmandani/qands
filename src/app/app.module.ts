@@ -11,13 +11,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { Dashboard3Component } from './dashboard3/dashboard3.component';
-import {QandsService } from './services/index';
+import { QandsService } from './services/index';
 @NgModule({
   declarations: [
     AppComponent,
-   // ConComponent,
-   // AbcdComponent,
-   // HomeComponent,
+    // ConComponent,
+    // AbcdComponent,
+    // HomeComponent,
     DashboardComponent,
     LoginComponent,
     Dashboard2Component,
@@ -28,7 +28,7 @@ import {QandsService } from './services/index';
     HttpModule,
     routing,
     FormsModule,
-     ReactiveFormsModule
+    ReactiveFormsModule
   ],
   providers: [QandsService],
   bootstrap: [AppComponent]
