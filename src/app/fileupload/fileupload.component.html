@@ -1,3 +1,29 @@
-<p>
-  fileupload works!
-</p>
+<div class="jumbotron text-center">
+  <h2>Search Your Questions Type</h2>
+</div>
+
+<div class="container">
+  <form method="POST" name="form" #form="ngForm" novalidate (ngSubmit)="onSubmitQuandS()">
+      <div class="form-group">
+          <label for="sel1">Select from Topic list:</label>
+          <select class="form-control" [(ngModel)]="model.topic" name="topic" #topic="ngModel">
+            <option>Java</option>
+            <option>SQL</option>
+            <option>JavaScript</option>
+            <option>Node</option>
+            <option>MongoDB</option>
+          </select>
+        </div>
+
+    <button type="submit" type="submit" [disabled]="!form.valid" data-toggle="model" data-target="#myModal" class="btn btn-default btn-sucess">Submit</button>
+  </form>
+
+
+</div>
+
+<div style="width:80%;margin: 0 auto;"> 
+  <ul class="list-group" *ngFor="let Qandsarry of Qandsarrys ">
+    <li class="list-group-item active">{{Qandsarry.question}}<button (click)="ondeleteQandS(Qandsarry);">delete</button></li>
+    <li class="list-group-item">{{Qandsarry.answers}}</li><br>
+  </ul>
+</div>

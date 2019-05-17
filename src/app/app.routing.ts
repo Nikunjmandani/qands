@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { Dashboard3Component } from './dashboard3/dashboard3.component';
+import { FileuploadComponent } from './fileupload/fileupload.component';
 
 export const appRoutes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -14,6 +15,7 @@ export const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'dashboard2', component: Dashboard2Component },
   { path: 'dashboard3', component: Dashboard3Component },
+  { path: 'upload', component:FileuploadComponent},
   // { path: 'con', component: ConComponent },
   // { path: 'abcd', component: AbcdComponent },
   //{ path: 'home', component: HomeComponent },

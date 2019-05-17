@@ -5,6 +5,16 @@
 
 <div class="container">
   <form method="POST" name="form" #form="ngForm" novalidate (ngSubmit)="onSubmitQuandS()">
+      <div class="form-group">
+          <label for="sel1">Select from Topic list:</label>
+          <select class="form-control" [(ngModel)]="model.topic" name="topic" #topic="ngModel">
+            <option>Java</option>
+            <option>SQL</option>
+            <option>JavaScript</option>
+            <option>Node</option>
+            <option>MongoDB</option>
+          </select>
+        </div>
     <div class="form-group">
       <label class="control-label" for="email">Question:</label>
       <br>
@@ -22,7 +32,7 @@
 
 </div>
 
-<div>
+<div style="width:80%;margin: 0 auto;">
   <ul class="list-group" *ngFor="let Qandsarry of Qandsarrys ">
     <li class="list-group-item active">{{Qandsarry.question}}<button (click)="ondeleteQandS(Qandsarry);">delete</button></li>
     <li class="list-group-item">{{Qandsarry.answers}}</li><br>
